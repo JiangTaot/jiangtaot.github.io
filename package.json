@@ -1,6 +1,7 @@
 {
   "name": "hexo-site",
   "version": "0.0.0",
+  "description": "应用程序的信息。EJS, Stylus 和 Markdown 渲染引擎 已默认安装，您可以自由移除",
   "private": true,
   "scripts": {
     "build": "Hexo/node_modules/.bin/hexo generate",

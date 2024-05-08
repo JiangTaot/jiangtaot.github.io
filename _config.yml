@@ -1,19 +1,21 @@
 # Hexo Configuration
+# 网站的 配置 信息，您可以在此配置大部分的参数
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 江山易改涛声依旧的个人博客
 subtitle: ''
-description: ''
+description: '江山易改涛声依旧的个人博客'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: 江涛
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://github.com/JiangTaot/jiangtaot.github.io.git
+root: https://jiangtaot.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: Nexmoe
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
