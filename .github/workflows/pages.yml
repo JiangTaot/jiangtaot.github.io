@@ -1,4 +1,4 @@
-name: Pages
+name: pages
 
 on:
   push:
@@ -9,42 +9,43 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: 检查分支
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # If your repository depends on submodule, please see: https://github.com/actions/checkout
-          submodules: recursive
-      - name: Use Node.js v14.15.0
+         ref: master
+         
+      - name: 安装node
         uses: actions/setup-node@v4
         with:
-          # Examples: 20, 18.19, >=16.20.2, lts/Iron, lts/Hydrogen, *, latest, current, node
-          # Ref: https://github.com/actions/setup-node#supported-version-syntax
           node-version: '14.15.0'
-      - name: Cache NPM dependencies
+
+      - name: 安装hexo
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+          
+      - name: 缓存hexo
         uses: actions/cache@v4
+        id: cache
         with:
           path: node_modules
-          key: ${{ runner.OS }}-npm-cache
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+            
+      - name: 安装依赖
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm install --save
+        
+      - name: 生成静态文件
+        run: |
+          hexo clean
+          hexo generate
+        
+      - name: 部署
+        run: |
+          git config --global user.name "JiangTaot"
+          git cofnig --global user.email "2547236893@qq.com"
+          git clone https://github.com/JiangTaot/jiangtaot.github.io.git .deploy_git
+        
+
