@@ -1,0 +1,3 @@
+# 自动为每一篇文章生成封面
+article:
+  auto_cover: true
