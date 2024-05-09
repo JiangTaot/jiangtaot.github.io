@@ -1,6 +1,6 @@
 # 自动为每一篇文章生成封面
 article:
-  auto_cover: true
+  auto_cover: false
 # 侧边栏主功能导航菜单
 menubar:
   columns: 4 # 一行多少个
