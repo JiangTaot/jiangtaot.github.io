@@ -1,3 +1,6 @@
+---
+title: 基于GitHub Page的个人博客搭建
+---
 # 基于GitHub Page的个人博客搭建
 
 ## 1、GitHub Page
