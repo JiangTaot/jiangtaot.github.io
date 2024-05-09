@@ -30,25 +30,3 @@ menubar:
       icon: solar:chat-square-like-bold-duotone
       title: 社交
       url: /friends/
-
-menu:
-  home:
-    text: 主页
-    url: /
-    target: _self  # 添加这一行
-  archives:
-    text: 归档
-    url: /archives
-    target: _self  # 添加这一行
-  tags:
-    text: 标签
-    url: /tags
-    target: _self  # 添加这一行
-  categories:
-    text: 分类
-    url: /categories
-    target: _self  # 添加这一行
-  about:
-    text: 关于
-    url: /about
-    target: _self  # 添加这一行
