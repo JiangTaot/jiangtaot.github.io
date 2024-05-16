@@ -2,6 +2,7 @@
 title: Stellar主题使用
 tags: [hexo,stellar,博客]
 categories: [博客搭建]
+cover: /images/jt/blog/alma.png
 poster:
   topic: Stellar主题一些简单使用
   headline: Stellar主题使用
@@ -9,9 +10,7 @@ date: 2024-05-16 17:40:17
 description:
 ---
 
-# Stellar主题使用
-
-## 评论功能
+## 评论插件
 
 ### Beaudar
 
