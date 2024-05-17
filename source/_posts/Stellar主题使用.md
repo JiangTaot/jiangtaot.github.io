@@ -11,9 +11,9 @@ date: 2024-05-16 17:40:17
 description:
 ---
 
-## 评论插件
+# 评论插件
 
-### Beaudar
+## Beaudar
 
 > Beaudar 是 Utterances 的中文版本，相比 Utterances 有更多的体验优化，可以按时间倒序排序
 
@@ -40,3 +40,49 @@ comments:
 }
 ```
 {% endtabs %}
+
+其他插件请见：{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png %}
+
+
+
+# 网站链接
+
+{% tabs active:2 align:center %}
+
+<!-- tab 演示效果 -->
+
+{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png %}
+
+{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png desc:true %}
+
+<!-- tab 语法格式 -->
+
+外链卡片语法格式：
+
+~~~bash
+{% link href [title] [icon:src] [desc:true/false] %}
+~~~
+
+参数含义：
+
+~~~yaml
+href: 链接
+title: 可选，手动设置标题（为空时会自动抓取页面标题）
+icon: 可选，手动设置图标（为空时会自动抓取页面图标）
+desc: 可选，是否显示摘要描述，为true时将会显示页面描述
+~~~
+
+<!-- tab 写法示例 -->
+
+~~~bash
+无摘要
+{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png %}
+有摘要
+{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png desc:true %}
+~~~
+
+{% endtabs %}
+
+
+
+
