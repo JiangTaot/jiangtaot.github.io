@@ -51,9 +51,9 @@ comments:
 
 <!-- tab 演示效果 -->
 
-{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png %}
+{% link https://xaoxuu.com/wiki/stellar/tag-plugins/express/  Stellar主题外链卡片设置  icon:/images/jt/blog/alma.png %}
 
-{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png desc:true %}
+{% link https://xaoxuu.com/wiki/stellar/tag-plugins/express/  Stellar主题外链卡片设置  icon:/images/jt/blog/alma.png desc:true %}
 
 <!-- tab 语法格式 -->
 
@@ -76,9 +76,9 @@ desc: 可选，是否显示摘要描述，为true时将会显示页面描述
 
 ~~~bash
 无摘要
-{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png %}
+{% link https://xaoxuu.com/wiki/stellar/tag-plugins/express/  Stellar主题外链卡片设置  icon:/images/jt/blog/alma.png %}
 有摘要
-{% link https://xaoxuu.com/wiki/stellar/comments/  Stellar主题插件配置  icon:/images/jt/blog/alma.png desc:true %}
+{% link https://xaoxuu.com/wiki/stellar/tag-plugins/express/  Stellar主题外链卡片设置  icon:/images/jt/blog/alma.png desc:true %}
 ~~~
 
 {% endtabs %}
