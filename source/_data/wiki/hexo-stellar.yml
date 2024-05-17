@@ -16,8 +16,8 @@ leftbar:
   - related
 base_dir: /wiki/
 tree:
-    '快速开始'：
-      - index
-      - examples
-      - releases
-      '基本使用'：
+  '快速开始'：
+    - index
+    - examples
+    - releases
+  '基本使用'：
