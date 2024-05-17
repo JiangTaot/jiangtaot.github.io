@@ -3,6 +3,7 @@ title: Stellar主题使用
 tags: [hexo,stellar,博客]
 categories: [博客搭建]
 cover: /images/jt/blog/alma.png
+banner: /images/jt/blog/alma.png
 poster:
   topic: Stellar主题一些简单使用
   headline: Stellar主题使用

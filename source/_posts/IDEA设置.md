@@ -3,9 +3,10 @@ title: IDEA设置
 tags: [IDEA,设置]
 categories: [IDEA]
 cover: /images/jt/blog/1343747.png
+banner: /images/jt/blog/1343747.png
 poster:
-  topic: 标题上方的小字
-  headline: 大标题
+  topic: IDEA中的个性设置
+  headline: IDEA设置
 date: 2024-05-17 10:30:43
 description:
 ---

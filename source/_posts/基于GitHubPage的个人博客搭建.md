@@ -5,6 +5,7 @@ date: 2024-05-09 20:19:34
 tags: [hexo,博客]
 categories: [博客搭建]
 cover: /images/jt/blog/leimu.png
+banner: /images/jt/blog/leimu.png
 poster: # 海报（可选，全图封面卡片）
   headline: 基于GitHub Page的个人博客搭建 # 必选
   caption: 使用 hexo + GitHub Page + stellar 主题 实现 # 可选
