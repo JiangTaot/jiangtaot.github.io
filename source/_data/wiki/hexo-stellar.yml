@@ -14,8 +14,9 @@ leftbar:
   - tree
   - timeline_stellar_releases
   - related
-base_dir: /wiki/
+base_dir: /wiki/stellar/
 tree:
   '快速开始':
     - index
   '基本使用':
+    - 日记
