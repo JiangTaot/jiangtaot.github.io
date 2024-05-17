@@ -1,0 +1,22 @@
+name: 江山易改涛声依旧
+title: 江山易改涛声依旧 - JTの博客
+subtitle: 'JTの博客 | 修身;齐家;治国;平天下'
+tags: 博客主题
+icon: /images/avatar.jpg
+cover: /images/avatar.jpg
+description: '江山易改涛声依旧的个人博客'
+repo: JiangTaoT/jiangtaot.github.io
+search:
+  filter: /wiki/
+  placeholder: 在文档中搜索
+leftbar:
+  - tree
+  - timeline_stellar_releases
+  - related
+base_dir: /wiki/
+tree:
+    '快速开始'：
+      - index
+      - examples
+      - releases
+      '基本使用'：
