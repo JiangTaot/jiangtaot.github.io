@@ -1,4 +1,5 @@
 ---
+wiki: hexo-stellar
 title: Stellar主题使用
 author: JT
 tags: [hexo,stellar,博客]

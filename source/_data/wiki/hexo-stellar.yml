@@ -1,14 +1,14 @@
 name: 江山易改涛声依旧
 title: 江山易改涛声依旧 - JTの博客
 subtitle: 'JTの博客 | 修身;齐家;治国;平天下'
-tags: 博客主题
+tags: 博客
 icon: /images/avatar.jpg
 cover: /images/avatar.jpg
 coverpage: true
 description: '江山易改涛声依旧的个人博客'
 repo: JiangTaoT/jiangtaot.github.io
 search:
-  filter: /wiki/
+  filter: /wiki/stellar
   placeholder: 在文档中搜索
 leftbar:
   - tree
@@ -17,6 +17,6 @@ leftbar:
 base_dir: /wiki/stellar/
 tree:
   '快速开始':
-    - index
+    - 基于GitHubPage的个人博客搭建
   '基本使用':
-    - 日记
+    - Stellar主题使用

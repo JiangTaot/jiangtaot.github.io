@@ -1,4 +1,5 @@
 ---
+wiki: hexo-stellar
 menu_id: post
 title: 基于GitHub Page的个人博客搭建
 date: 2024-05-09 20:19:34
