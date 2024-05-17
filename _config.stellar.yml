@@ -3,7 +3,7 @@ article:
   related_posts: # 相关文章推荐功能 npm i hexo-related-popular-posts
     enable: true
     title: 您可能感兴趣的文章
-  license: '本文由JT编写,遵循 CC BY-NC-SA 4.0 许可协议.转载请保留原文链接.'
+  license: '本文由{author.name}编写,遵循 CC BY-NC-SA 4.0 许可协议.转载请保留原文链接.'
 #  share: [wechat] # 分享至
 #  type: tech # story 有两种风格可选，tech: 默认技术类文章, story: 图文类文章，文字和段落间增距大
 
