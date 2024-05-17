@@ -1,5 +1,6 @@
 ---
 title: Stellar主题使用
+author: JT
 tags: [hexo,stellar,博客]
 categories: [博客搭建]
 cover: /images/jt/blog/alma.png

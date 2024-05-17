@@ -2,6 +2,7 @@
 menu_id: post
 title: 基于GitHub Page的个人博客搭建
 date: 2024-05-09 20:19:34
+author: JT
 tags: [hexo,博客]
 categories: [博客搭建]
 cover: /images/jt/blog/leimu.png

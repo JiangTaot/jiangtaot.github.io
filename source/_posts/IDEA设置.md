@@ -1,5 +1,6 @@
 ---
 title: IDEA设置
+author: JT
 tags: [IDEA,设置]
 categories: [IDEA]
 cover: /images/jt/blog/1343747.png
