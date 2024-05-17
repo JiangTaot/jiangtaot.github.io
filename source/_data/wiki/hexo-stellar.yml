@@ -1,4 +1,4 @@
-name: hexo·stellar
+name: hexo
 title: 江山易改涛声依旧 - JTの博客
 subtitle: 'JTの博客 | 修身;齐家;治国;平天下'
 tags: 博客
@@ -12,8 +12,8 @@ search:
   placeholder: 在文档中搜索
 leftbar:
   - tree
-  - timeline_stellar_releases
-  - related
+#  - timeline_stellar_releases
+#  - related
 base_dir: /wiki/stellar/
 tree:
   '快速开始':
