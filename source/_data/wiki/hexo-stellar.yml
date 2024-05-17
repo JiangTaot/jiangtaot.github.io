@@ -4,6 +4,7 @@ subtitle: 'JTの博客 | 修身;齐家;治国;平天下'
 tags: 博客主题
 icon: /images/avatar.jpg
 cover: /images/avatar.jpg
+coverpage: true
 description: '江山易改涛声依旧的个人博客'
 repo: JiangTaoT/jiangtaot.github.io
 search:
