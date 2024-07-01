@@ -1,4 +1,5 @@
 name: 社交
+coverpage: true
 search:
   filter: /friends/ponder
   placeholder: 在文档中搜索
