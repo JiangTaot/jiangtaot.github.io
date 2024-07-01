@@ -8,8 +8,8 @@ article:
 #  type: tech # story 有两种风格可选，tech: 默认技术类文章, story: 图文类文章，文字和段落间增距大
 
 logo:
+  avatar: '[{config.avatar}](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
   subtitle: 'JTの博客 | 修身;齐家;治国;平天下' # 设置鼠标指上 subtitle 后翻转另一行字（您可以将鼠标移至左上角的Stellar查看效果）
-  avatar: /images/avatar.jpg
 
 open_graph:  # 标签  Open Graph (OG) 标签是网页上的一组特定的meta标签，用于控制当页面被分享到社交媒体平台（如Facebook、LinkedIn、Twitter等）时，显示的预览信息
   enable: true # 默认生成 Open Graph
