@@ -1,6 +1,6 @@
 ---
 wiki: hexo-stellar
-title: Stellar 配置社交模块
+title: Stellar配置社交模块
 tags: [hexo,博客,Stellar]
 categories: [博客搭建]
 cover: /images/jt/blog/1364850.png
