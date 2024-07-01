@@ -32,7 +32,7 @@ menubar: # 侧边栏主功能导航菜单
       icon: solar:planet-bold-duotone
       title: 探索
       url: /explore/
-    - id: social
+    - id: friends
       theme: '#F44336'
       icon: solar:chat-square-like-bold-duotone
       title: 社交
