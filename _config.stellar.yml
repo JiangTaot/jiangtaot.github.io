@@ -32,7 +32,7 @@ menubar: # 侧边栏主功能导航菜单
       icon: solar:planet-bold-duotone
       title: 探索
       url: /explore/
-    - id: friends
+    - id: social
       theme: '#F44336'
       icon: solar:chat-square-like-bold-duotone
       title: 社交
@@ -45,6 +45,3 @@ comments: # 评论插件安装
 
 author: JT
 
-site_tree:
-  friends:
-    base_dir: friends
