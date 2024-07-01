@@ -44,3 +44,7 @@ comments: # 评论插件安装
     repo: JiangTaot/blog-comments
 
 author: JT
+
+site_tree:
+  friends:
+    base_dir: friends
