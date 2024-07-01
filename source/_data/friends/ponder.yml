@@ -1,0 +1,6 @@
+base_dir: /friends/ponder/
+leftbar:
+  - tree
+tree:
+  '一些不成熟的想法':
+    - 谁便写点啥
