@@ -11,6 +11,7 @@ banner: /images/jt/blog/leimu.png
 poster: # 海报（可选，全图封面卡片）
   headline: 基于GitHub Page的个人博客搭建 # 必选
   caption: 使用 hexo + GitHub Page + stellar 主题 实现 # 可选
+layout: page
 ---
 # 基于GitHub Page的个人博客搭建
 

@@ -11,6 +11,7 @@ poster:
   headline: Stellar主题使用
 date: 2024-05-16 17:40:17
 description:
+layout: page
 ---
 
 # 评论插件

@@ -1,0 +1,17 @@
+name: 江山易改涛声依旧
+subtitle: ~交个朋友~
+icon: /images/avatar.jpg
+#cover: /images/avatar.jpg
+#description: '江山易改涛声依旧的个人博客'
+search:
+  filter: /social
+  placeholder: 站内搜索
+leftbar:
+  - tree
+  - timeline_stellar_releases
+  - related
+base_dir: /social/
+tree:
+  '社交':
+    - index
+    - index2
