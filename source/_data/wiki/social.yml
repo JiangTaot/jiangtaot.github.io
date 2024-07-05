@@ -13,5 +13,5 @@ leftbar:
 base_dir: /social/
 tree:
   '社交':
-    - index
+    - 健身计划
     - index2
