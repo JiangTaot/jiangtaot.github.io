@@ -28,9 +28,10 @@ tb_sale_order、tb_sale_order_item、tf_item_sku 数据量各400万
 {% tabs active:2 align:center %}
 
 <!-- tab MySQL表信息 -->
+
 tb_sale_order
 
-~~~scheme
+```scheme
 -- zongheng_111.tb_sale_order definition
 
 CREATE TABLE `tb_sale_order` (
@@ -88,11 +89,11 @@ CREATE TABLE `tb_sale_order` (
   `PRODUCT_MATCH_ID` bigint DEFAULT NULL COMMENT '商品匹配标识',
   PRIMARY KEY (`ORDER_ID`,`START_DATE`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='销售订单';
-~~~
+```
 
 tb_sale_order_item
 
-~~~scheme
+```scheme
 -- zongheng_111.tb_sale_order_item definition
 
 CREATE TABLE `tb_sale_order_item` (
@@ -150,11 +151,11 @@ CREATE TABLE `tb_sale_order_item` (
   `HC_P_ORDER_NO` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL COMMENT '慧采父订单编号',
   PRIMARY KEY (`SALE_ORDER_ITEM_ID`,`START_DATE`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='销售订单商品';
-~~~
+```
 
 tf_item_sku
 
-~~~scheme
+```scheme
 -- zongheng_111.tf_item_sku definition
 
 CREATE TABLE `tf_item_sku` (
@@ -213,9 +214,10 @@ CREATE TABLE `tf_item_sku` (
   PRIMARY KEY (`ITEM_SKU_ID`,`START_DATE`),
   KEY `tf_item_sku_ITEM_SKU_ID_IDX` (`ITEM_SKU_ID`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='商品SKU信息表;';
-~~~
+```
 
 <!-- tab MySQL执行语句 ->
+
 新·中台#(tb_sale_order)#分页查询
 
 ```sql
@@ -279,20 +281,23 @@ limit 0,1000;
 ```
 
 <!-- tab MySQL执行结果 ->
+
 | label                                                        | 样本 | 平均值 ms | 最小值 ms | 最大值 ms | 标准偏差           | 异常% | 吞吐量             | 接收 KB/sec        | 发送 KB/sec | 平均字节数 |
 | ------------------------------------------------------------ | ---- | --------- | --------- | --------- | ------------------ | ----- | ------------------ | ------------------ | ----------- | ---------- |
 | 新·中台#(tb_sale_order)#分页查询                             | 1000 | 5         | 2         | 431       | 19.89454495584154  | 0.0   | 2.4540539744631147 | 124.84759941372651 | 0.0         | 52095.0    |
 | 新·中台#(tb_sale_order)#条件查询                             | 1000 | 0         | 0         | 4         | 0.4020149250960716 | 0.0   | 2.4567006510256726 | 0.74372773615035   | 0.0         | 310.0      |
 | 新·中台#(tb_sale_order、tb_sale_order_item、tf_item_sku)#连表分页查询 | 1000 | 4047      | 3496      | 5816      | 372.96866342897783 | 0.0   | 2.435798442550476  | 263.58479044826    | 0.0         | 110810.0   |
 | 总体                                                         | 3000 | 1351      | 0         | 5816      | 1918.7305292496276 | 0.0   | 7.299518718399167  | 387.8225740961979  | 0.0         | 54405.0    |
+
 {% endtabs %}
+
 # PgSQL
 {% tabs active:2 align:center %}
 
 <!-- tab PgSQL表信息 ->
 tb_sale_order
 
-~~~scheme
+```scheme
 -- zongheng_111.tb_sale_order definition
 
 -- Drop table
@@ -354,11 +359,11 @@ CREATE TABLE zongheng_111.tb_sale_order (
 	product_match_id int8 NULL,
 	CONSTRAINT idx_19683_primary PRIMARY KEY (order_id, start_date)
 );
-~~~
+```
 
 tb_sale_order_item
 
-~~~scheme
+```scheme
 -- zongheng_111.tb_sale_order_item definition
 
 -- Drop table
@@ -420,11 +425,11 @@ CREATE TABLE zongheng_111.tb_sale_order_item (
 	hc_p_order_no varchar(32) NULL,
 	CONSTRAINT idx_19695_primary PRIMARY KEY (sale_order_item_id, start_date)
 );
-~~~
+```
 
 tf_item_sku
 
-~~~scheme
+```scheme
 -- zongheng_111.tf_item_sku definition
 
 -- Drop table
@@ -487,7 +492,7 @@ CREATE TABLE zongheng_111.tf_item_sku (
 	CONSTRAINT idx_19706_primary PRIMARY KEY (item_sku_id, start_date)
 );
 CREATE INDEX idx_19706_tf_item_sku_item_sku_id_idx ON zongheng_111.tf_item_sku USING btree (item_sku_id);
-~~~
+```
 
 <!-- tab PgSQL执行语句 ->
 新·中台#PGSQL(tb_sale_order)#分页查询
@@ -580,15 +585,15 @@ offset 0;
 
 MySQL8同步数据至PgSQL15
 
-~~~bash
+```bash
  pgloader --debug --verbose mysql://zongheng_sdb:[password]@192.168.0.200:3165/zongheng_111 postgresql://postgres:[password]@192.168.0.200:5432/zongheng_111
-~~~
+```
 
 防止GC建议执行
 
-~~~bash
+```bash
 pgloader mysql://zongheng_sdb:[password]@192.168.0.200:3165/zongheng_111 postgresql://postgres:[password]@192.168.0.200:5432/zongheng_111
-~~~
+```
 
 
 
