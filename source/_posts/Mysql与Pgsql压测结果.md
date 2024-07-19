@@ -25,6 +25,7 @@ tb_sale_order、tb_sale_order_item、tf_item_sku 数据量各400万
 一一对应连表也是400万
 
 # MySQL
+
 {% tabs active:2 align:center %}
 
 <!-- tab MySQL表信息 -->
@@ -216,7 +217,7 @@ CREATE TABLE `tf_item_sku` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='商品SKU信息表;';
 ```
 
-<!-- tab MySQL执行语句 ->
+<!-- tab MySQL执行语句 -->
 
 新·中台#(tb_sale_order)#分页查询
 
@@ -280,7 +281,7 @@ left join tf_item_sku tis on tsoi.ITEM_SKU_ID = tis.ITEM_SKU_ID
 limit 0,1000;
 ```
 
-<!-- tab MySQL执行结果 ->
+<!-- tab MySQL执行结果 -->
 
 | label                                                        | 样本 | 平均值 ms | 最小值 ms | 最大值 ms | 标准偏差           | 异常% | 吞吐量             | 接收 KB/sec        | 发送 KB/sec | 平均字节数 |
 | ------------------------------------------------------------ | ---- | --------- | --------- | --------- | ------------------ | ----- | ------------------ | ------------------ | ----------- | ---------- |
@@ -294,7 +295,7 @@ limit 0,1000;
 # PgSQL
 {% tabs active:2 align:center %}
 
-<!-- tab PgSQL表信息 ->
+<!-- tab PgSQL表信息 -->
 tb_sale_order
 
 ```scheme
@@ -494,7 +495,7 @@ CREATE TABLE zongheng_111.tf_item_sku (
 CREATE INDEX idx_19706_tf_item_sku_item_sku_id_idx ON zongheng_111.tf_item_sku USING btree (item_sku_id);
 ```
 
-<!-- tab PgSQL执行语句 ->
+<!-- tab PgSQL执行语句 -->
 新·中台#PGSQL(tb_sale_order)#分页查询
 
 ```sql
@@ -559,7 +560,7 @@ limit 1000
 offset 0;
 ```
 
-<!-- tab PgSQL执行结果 ->
+<!-- tab PgSQL执行结果 -->
 | label                                                        | 样本 | 平均值 ms | 最小值 ms | 最大值 ms | 标准偏差           | 异常% | 吞吐量             | 接收 KB/sec        | 发送 KB/sec | 平均字节数         |
 | ------------------------------------------------------------ | ---- | --------- | --------- | --------- | ------------------ | ----- | ------------------ | ------------------ | ----------- | ------------------ |
 | 新·中台#PGSQL(tb_sale_order)#分页查询                        | 1000 | 4         | 3         | 251       | 9.86334304381633   | 0.0   | 2.1433240813177155 | 117.31769019322067 | 0.0         | 56050.0            |
