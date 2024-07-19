@@ -44,5 +44,11 @@ comments: # 评论插件安装
   beaudar:
     repo: JiangTaot/blog-comments
 
+copycode:
+  enable: true
+  js: /js/plugins/copycode.js
+  default_text: 'Copy' # 按钮显示文字
+  success_text: 'Copied' # 复制成功信息
+
 author: JT
 
