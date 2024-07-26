@@ -31,7 +31,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: ./node_modules/.bin/hexo clean && ./node_modules/.bin/hexo generate && mv 41e5fa8ee4aa45970893d95dafeda6e0.txt .
+        run: ./node_modules/.bin/hexo clean && ./node_modules/.bin/hexo generate && mv 41e5fa8ee4aa45970893d95dafeda6e0.txt ./
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
